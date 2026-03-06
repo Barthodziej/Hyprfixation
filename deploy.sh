@@ -3,11 +3,12 @@
 config_subdirs=(.config/*)
 for dir in "${config_subdirs[@]}"
 do
-    cp -r $dir ~/Documents/.config --update=all
+    cp -r $dir ~/.config --update=all
 done
 
+mkdir ~/.config/hypr/wallpapers
 wallpapers=(wallpapers/*)
 for file in "${wallpapers[@]}"
 do
-    cp -r $file ~/Pictures/Wallpapers --update=all
+    sudo cp $file ~/.config/hypr/wallpapers --update=all
 done
