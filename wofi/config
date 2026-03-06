@@ -1,0 +1,13 @@
+mode=drun
+prompt=Search...
+
+width=30%
+location=top
+yoffset=324
+lines=10
+insensitive=true
+
+dynamic_lines=true
+no_actions=true
+hide_scroll=true
+term=kitty

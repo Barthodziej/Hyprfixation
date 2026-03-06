@@ -1,0 +1,30 @@
+window {
+    border: 2px solid #666666;
+    background-color: rgba(43, 48, 59, 1);
+}
+
+#input {
+    outline: none;
+    background-color: rgba(65, 72, 89, 1);
+    color: #ffffff;
+    caret-color: #ffffff;
+    border: 2px solid #666666;
+    border-radius: 0px;
+}
+
+#entry {
+    padding: 10px;
+    spacing: 5px;
+}
+
+#entry:selected {
+    outline: none;
+    border-left: 2px solid #2e9ef4;
+    border-right: 2px solid #2e9ef4;
+    background-color:rgba(65, 72, 89, 1);
+}
+
+#text {
+    color: #ffffff;
+    font-family: JetBrains Mono;
+}

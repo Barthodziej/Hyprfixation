@@ -1,0 +1,48 @@
+window {
+    background-color: transparent;
+}
+
+#input {
+    border: 2px solid #666666;
+    box-shadow: none !important;
+    background-color: rgba(65, 72, 89, 1);
+    color: #ffffff;
+    caret-color: #ffffff;
+    border-radius: 0px;
+    margin-bottom: 16px;
+}
+
+#input:focus {
+    border: 2px solid #2e9ef4;
+}
+
+#inner-box {
+    background-color: rgba(43, 48, 59, 1);
+}
+
+#scroll {
+    border-top: 2px solid #666666;
+    border-bottom: 2px solid #666666;
+    background-color: rgba(43, 48, 59, 1);
+    border-left: 2px solid #666666;
+    border-right: 2px solid #666666;
+}
+
+#entry {
+    outline: none;
+    padding: 5px;
+    border-left: 2px solid #666666;
+    border-right: 2px solid #666666;
+}
+
+
+#entry:selected {
+    border-left: 2px solid #2e9ef4;
+    border-right: 2px solid #2e9ef4;
+    background-color:rgba(65, 72, 89, 1);
+}
+
+#text {
+    color: #ffffff;
+    font-family: JetBrains Mono;
+}
