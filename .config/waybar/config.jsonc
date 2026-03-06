@@ -9,8 +9,8 @@
         "clock"
     ],
     "modules-right": [
-        "pulseaudio#source",
-        "pulseaudio#sink",
+	"wireplumber#source",
+	"wireplumber#sink",
         "backlight",
         "bluetooth",
         "network",
@@ -49,7 +49,8 @@
         "format-icons": ["", "", "", "", ""]
     },
     "backlight": {
-        "format": "{percent}% 󰌵"
+        "format": "{percent}% 󰌵",
+	"interval": 1
     },
     "bluetooth": {
         "format-off": "󰂲",
@@ -71,7 +72,15 @@
         "tooltip-format-wifi": "{essid}\n󰜮 {bandwidthDownBytes}\n󰜷 {bandwidthUpBytes}",
         "on-click": "if hyprctl clients | grep \"class: floating_nmtui\"; then hyprctl dispatch killwindow class:floating_nmtui; else kitty --class \"floating_nmtui\" -e nmtui; fi"
     },
-    "pulseaudio#sink": {
+    "wireplumber#source" : {
+	"node-type": "Audio/Source",
+        "scroll-step": 2,
+	"format": "{volume}% ",
+	"format-muted": "muted ",
+        "on-click": "if hyprctl clients | grep \"class: floating_wiremix\"; then hyprctl dispatch killwindow class:floating_wiremix; else kitty --class \"floating_wiremix\" -e wiremix; fi"
+    },
+    "wireplumber#sink" : {
+	"node-type": "Audio/Sink",
         "scroll-step": 2,
         "format": "{volume}% {icon}",
         "format-bluetooth": "{volume}% {icon}",
@@ -88,23 +97,7 @@
         },
         "on-click": "if hyprctl clients | grep \"class: floating_wiremix\"; then hyprctl dispatch killwindow class:floating_wiremix; else kitty --class \"floating_wiremix\" -e wiremix; fi"
     },
-    "pulseaudio#source": {
-        "scroll-step": 2,
-        "format": "{format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "mute ",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
-        },
-        "on-click": "if hyprctl clients | grep \"class: floating_wiremix\"; then hyprctl dispatch killwindow class:floating_wiremix; else kitty --class \"floating_wiremix\" -e wiremix; fi"
-    },
-    "custom/power": {
+   "custom/power": {
         "format" : "⏻ ",
 		"tooltip": false,
 		"menu": "on-click",

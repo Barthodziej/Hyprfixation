@@ -6,7 +6,7 @@ do
     cp -r $dir ~/.config --update=all
 done
 
-mkdir ~/.config/hypr/wallpapers
+mkdir -p ~/.config/hypr/wallpapers
 wallpapers=(wallpapers/*)
 for file in "${wallpapers[@]}"
 do
