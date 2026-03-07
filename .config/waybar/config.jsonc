@@ -77,7 +77,7 @@
         "scroll-step": 2,
 	"format": "{volume}% ",
 	"format-muted": "muted ",
-        "on-click": "if hyprctl clients | grep \"class: floating_wiremix\"; then hyprctl dispatch killwindow class:floating_wiremix; else kitty --class \"floating_wiremix\" -e wiremix; fi"
+        "on-click": "if hyprctl clients | grep \"class: floating_wiremix\"; then hyprctl dispatch killwindow class:floating_wiremix; else kitty --class \"floating_wiremix\" -e wiremix --tab input; fi"
     },
     "wireplumber#sink" : {
 	"node-type": "Audio/Sink",
@@ -95,7 +95,7 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "if hyprctl clients | grep \"class: floating_wiremix\"; then hyprctl dispatch killwindow class:floating_wiremix; else kitty --class \"floating_wiremix\" -e wiremix; fi"
+        "on-click": "if hyprctl clients | grep \"class: floating_wiremix\"; then hyprctl dispatch killwindow class:floating_wiremix; else kitty --class \"floating_wiremix\" -e wiremix --tab output; fi"
     },
    "custom/power": {
         "format" : "⏻ ",
