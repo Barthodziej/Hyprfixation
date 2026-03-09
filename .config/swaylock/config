@@ -1,0 +1,9 @@
+color=000000
+image=~/.config/hypr/wallpapers/hueco-mundo.jpeg
+effect-blur=5x5
+effect-vignette=0.2:0.5
+indicator-radius=150
+clock
+timestr=%H:%M:%S
+datestr=%d %b %Y
+font=JetBrains Mono
