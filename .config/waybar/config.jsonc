@@ -84,8 +84,7 @@
         "scroll-step": 2,
         "format": "{volume}% {icon}",
         "format-bluetooth": "{volume}% {icon}",
-        "format-bluetooth-muted": "󰝟 {icon}",
-        "format-muted": "mute {icon}",
+        "format-muted": "muted {icon}",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
@@ -98,7 +97,7 @@
         "on-click": "if hyprctl clients | grep \"class: floating_wiremix\"; then hyprctl dispatch killwindow class:floating_wiremix; else kitty --class \"floating_wiremix\" -e wiremix --tab output; fi"
     },
    "custom/power": {
-        "format" : "⏻ ",
+        "format" : "⏻",
 		"tooltip": false,
 		"menu": "on-click",
 		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
