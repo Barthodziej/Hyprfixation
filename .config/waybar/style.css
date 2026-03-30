@@ -69,6 +69,12 @@ button:hover {
     color: rgba(100, 114, 125, 0.5);
 }
 
+.modules-left {
+    margin-top: 2px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+}
+
 .modules-right {
     margin-top: 2px;
     margin-right: 2px;
