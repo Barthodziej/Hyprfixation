@@ -3,3 +3,4 @@
 - Kitty
 - Waybar
 - Wofi
+- Swaybg
