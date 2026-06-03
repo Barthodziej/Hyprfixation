@@ -1,0 +1,60 @@
+window {
+    background-color: #263238
+}
+
+label {
+    color: #ffffff
+}
+
+button {
+    background-color: #425761;
+    background: #425761;
+    color: #ffffff;
+    border-color: #1b2429;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+entry {
+    color: #ffffff;
+    background-color: #36474f;
+    border-radius: 0px;
+    border-color: #1b2429;
+}
+
+headerbar {
+    background: #394b54 ;
+    border: none;
+    box-shadow: none;
+}
+
+headerbar stackswitcher button {
+    background-color: #36474f
+}
+
+headerbar stackswitcher button:checked {
+    background-color: #425761;
+}
+
+spinbutton {
+    border-color: #1b2429 ;
+    border-radius: 0;
+}
+
+spinbutton {
+    color: #ffffff;
+}
+
+list {
+    background-color: #36474f;
+    border-color: #1b2429 ;
+}
+
+list row:selected {
+    background-color: #425761;
+    border-color: #1b2429 ;
+}
+
+border {
+    border-color: #1b2429 ;
+}
