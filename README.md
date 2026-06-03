@@ -4,3 +4,4 @@
 - Waybar
 - Wofi
 - Swaybg
+- moreutils
