@@ -87,7 +87,7 @@
 	"tooltip-format-off": "Off",
 	"tooltip-format-on": "On",
 	"tooltip-format-connected": "Connected\n{device_alias}",
-	"on-click": "if hyprctl clients | grep \"class: floating_bluetui\"; then hyprctl dispatch killwindow class:floating_bluetui; else kitty --class \"floating_bluetui\" -e bluetui; fi"
+	"on-click": "if hyprctl clients | grep \"class: floating_bluetui\"; then pkill -f \"kitty --class floating_bluetui\"; else kitty --class \"floating_bluetui\" -e bluetui; fi",
     },    
     "network": {
 	"format": "{icon}",
@@ -98,14 +98,15 @@
 	    "disconnected": "󰖪"
 	},
 	"tooltip-format-wifi": "{essid}\n󰜮 {bandwidthDownBytes}\n󰜷 {bandwidthUpBytes}",
-	"on-click": "if hyprctl clients | grep \"class: floating_nmtui\"; then hyprctl dispatch killwindow class:floating_nmtui; else kitty --class \"floating_nmtui\" -e nmtui; fi"
+
+	"on-click": "if hyprctl clients | grep \"class: floating_nmtui\"; then pkill -f \"kitty --class floating_nmtui\"; else kitty --class \"floating_nmtui\" -e nmtui; fi"
     },
     "wireplumber#source" : {
 	"node-type": "Audio/Source",
 	"scroll-step": 2,
 	"format": "{volume}% ",
 	"format-muted": "muted ",
-	"on-click": "if hyprctl clients | grep \"class: floating_wiremix\"; then hyprctl dispatch killwindow class:floating_wiremix; else kitty --class \"floating_wiremix\" -e wiremix --tab input; fi"
+	"on-click": "if hyprctl clients | grep \"class: floating_wiremix\"; then pkill -f \"kitty --class floating_wiremix\"; else kitty --class \"floating_wiremix\" -e wiremix --tab input; fi"
     },
     "wireplumber#sink" : {
 	"node-type": "Audio/Sink",
@@ -122,7 +123,7 @@
 	    "car": "",
 	    "default": ["", "", ""]
 	},
-	"on-click": "if hyprctl clients | grep \"class: floating_wiremix\"; then hyprctl dispatch killwindow class:floating_wiremix; else kitty --class \"floating_wiremix\" -e wiremix --tab output; fi"
+	"on-click": "if hyprctl clients | grep \"class: floating_wiremix\"; then pkill -f \"kitty --class floating_wiremix\"; else kitty --class \"floating_wiremix\" -e wiremix --tab output; fi"
     },
     "custom/power": {
 	"format" : "⏻",
