@@ -19,7 +19,9 @@
     padding-right: 0px;
 }
 
-#login_window {
+#login_window,
+#shutdown_dialog,
+#restart_dialog {
     background-color: #263238;
     padding: 5px;
     border-width: 2;
