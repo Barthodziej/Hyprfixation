@@ -5,3 +5,5 @@
 - Wofi
 - Swaybg
 - moreutils
+- lightdm
+- lightdm gtk greeter

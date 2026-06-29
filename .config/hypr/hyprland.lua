@@ -25,7 +25,7 @@ local terminal = "kitty"
 local menu = "pkill wofi || wofi --show drun"
 
 hl.on("hyprland.start", function()
-    hl.exec_cmd("swaybg -i ~/.config/hypr/wallpapers/hueco-mundo.jpeg")
+    hl.exec_cmd("swaybg -i /usr/share/backgrounds/hueco-mundo.jpeg")
     hl.exec_cmd("waybar")
 end)
 
