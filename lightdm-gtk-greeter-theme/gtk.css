@@ -1,0 +1,45 @@
+* {
+    font-family: "JetBrains Mono";
+}
+
+#panel_window #menubar {
+    padding: 10px;
+}
+
+#panel_window #menubar > menuitem {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#panel_window #menubar > menuitem:first-child {
+    padding-left: 0px;
+}
+
+#panel_window #menubar > menuitem:last-child {
+    padding-right: 0px;
+}
+
+#login_window {
+    background-color: #263238;
+    padding: 5px;
+    border-width: 2;
+    border-style: solid;
+    border-image: linear-gradient(0deg, #268aab, #9ad1e3, #9ad1e3, #268aab) 1;
+}
+
+#login_window combobox window,
+#login_window combobox menu,
+#login_window combobox .popup,
+#panel_window combobox window,
+#panel_window combobox menu,
+#panel_window combobox .popup,
+#panel_window menu {
+    background-color: #263238;
+    color: #ffffff;
+    padding: 10px;
+    border-width: 2;
+    border-style: solid;
+    border-image: linear-gradient(0deg, #268aab, #9ad1e3, #9ad1e3, #268aab) 1;
+}
+
+

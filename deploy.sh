@@ -15,3 +15,8 @@ lightdm_config_source=lightdm
 lightdm_config_target=/etc/lightdm
 sudo mkdir -p $lightdm_config_target 
 sudo cp -r $lightdm_config_source/* $lightdm_config_target --update=all
+
+lightdm_gtk_greeter_theme_source=lightdm-gtk-greeter-theme
+lightdm_gtk_greeter_theme_target=/usr/share/themes/lightdm-gtk-greeter/gtk-3.0
+sudo mkdir -p $lightdm_gtk_greeter_theme_target 
+sudo cp -r $lightdm_gtk_greeter_theme_source/* $lightdm_gtk_greeter_theme_target --update=all
