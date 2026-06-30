@@ -22,6 +22,7 @@ hl.monitor({
 })
 
 local terminal = "kitty"
+local pdfviewer = "zathura"
 local menu = "pkill wofi || wofi --show drun"
 
 hl.on("hyprland.start", function()
@@ -209,6 +210,7 @@ hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
 hl.bind(mainMod .. " + K", hl.dsp.layout("swapsplit"))
 hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(terminal))
+hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(pdfviewer))
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + N", togglenmtui)
 hl.bind(mainMod .. " + B", togglebluetui)
